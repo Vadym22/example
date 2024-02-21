@@ -1,0 +1,27 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side" opened="true">
+    <mat-action-list role="list">
+      <mat-list-item role="listitem">NgRx</mat-list-item>
+      <mat-list-item role="listitem">Item 2</mat-list-item>
+      <mat-list-item role="listitem">Item 3</mat-list-item>
+    </mat-action-list>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <button
+      id="sidenav-toogle"
+      mat-stroked-button
+      color="primary"
+      aria-label="icon-button with arrow icon"
+      (click)="drawer.toggle()"
+    >
+      <mat-icon>arrow_back_ios_new</mat-icon>
+    </button>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, quos
+      molestiae fuga quisquam temporibus perspiciatis vero velit maxime sapiente
+      consequatur dignissimos repellat omnis quod, delectus voluptates ducimus
+      vel nulla architecto.
+    </p>
+  </div>
+</mat-drawer-container>

@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  height: calc(100% - 64px);
+  @media (max-width: 599px) {
+    height: calc(100% - 56px);
+  }
+}
+
+.sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav {
+  min-width: 200px;
+  @media (max-width: 599px) {
+    min-width: auto;
+  }
+}
+
+#sidenav-toogle {
+  padding: 0 10px;
+  min-width: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  .mat-icon {
+    margin: 0;
+  }
+}
+
+.sidenav-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
