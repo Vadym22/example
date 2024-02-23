@@ -38,9 +38,83 @@
 
   <mat-tab label="CODE">
     <div class="tab-container">
-      <pre>
-      <code> a = 1 </code>
-    </pre>
+      <mat-card style="display: inline-block">
+        <mat-card-content>
+          <table style="text-align: center; font-weight: 600">
+            <tr>
+              <td>SELECTOR</td>
+              <td>&#8592;</td>
+              <td>STORE</td>
+              <td></td>
+              <td>DB</td>
+            </tr>
+            <tr>
+              <td>&#8595;</td>
+              <td></td>
+              <td>&#8593;</td>
+              <td></td>
+              <td>&#8593;&#8595;</td>
+            </tr>
+            <tr>
+              <td>&#8595;</td>
+              <td></td>
+              <td>REDUCER</td>
+              <td></td>
+              <td>SERVICE</td>
+            </tr>
+            <tr>
+              <td>&#8595;</td>
+              <td></td>
+              <td>&#8593;</td>
+              <td></td>
+              <td>&#8593;&#8595;</td>
+            </tr>
+            <tr>
+              <td>COMPONENT</td>
+              <td>&#8594;</td>
+              <td>ACTION</td>
+              <td style="line-height: 10px">&#8594;<br />&#8592;</td>
+              <td>EFFECTS</td>
+            </tr>
+          </table>
+        </mat-card-content>
+      </mat-card>
+      <mat-divider></mat-divider>
+      <h2>app.config.ts</h2>
+      <pre><code [highlight]="codeAppConfig">
+      </code></pre>
+      <mat-divider></mat-divider>
+      <h2>models/book.ts</h2>
+      <pre><code [highlight]="codeInterface">
+      </code></pre>
+      <mat-divider></mat-divider>
+      <h2>app.state.ts</h2>
+      <pre><code [highlight]="codeAppState">
+      </code></pre>
+      <mat-divider></mat-divider>
+      <h2>book.actions.ts</h2>
+      <pre><code [highlight]="codeActions">
+      </code></pre>
+      <mat-divider></mat-divider>
+      <h2>book.effects.ts</h2>
+      <pre><code [highlight]="codeEffects">
+      </code></pre>
+      <mat-divider></mat-divider>
+      <h2>book.reducer.ts</h2>
+      <pre><code [highlight]="codeReducer">
+      </code></pre>
+      <mat-divider></mat-divider>
+      <h2>book.service.ts</h2>
+      <pre><code [highlight]="codeService">
+      </code></pre>
+      <mat-divider></mat-divider>
+      <h2>book-list.component.ts</h2>
+      <pre><code [highlight]="codeComponent">
+      </code></pre>
+      <mat-divider></mat-divider>
+      <h2>book-list.component.html</h2>
+      <pre><code [highlight]="codeComponentUI">
+      </code></pre>
     </div>
   </mat-tab>
 </mat-tab-group>
