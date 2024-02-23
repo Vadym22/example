@@ -1,7 +1,7 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side" opened="true">
     <mat-action-list role="list">
-      <mat-list-item role="listitem">NgRx</mat-list-item>
+      <a mat-list-item routerLink="/ngrx" role="listitem">NgRx</a>
       <mat-list-item role="listitem">Item 2</mat-list-item>
       <mat-list-item role="listitem">Item 3</mat-list-item>
     </mat-action-list>
@@ -17,11 +17,6 @@
     >
       <mat-icon>arrow_back_ios_new</mat-icon>
     </button>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, quos
-      molestiae fuga quisquam temporibus perspiciatis vero velit maxime sapiente
-      consequatur dignissimos repellat omnis quod, delectus voluptates ducimus
-      vel nulla architecto.
-    </p>
+    <router-outlet></router-outlet>
   </div>
 </mat-drawer-container>
